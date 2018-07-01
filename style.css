@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+body{
+  font-family: 'Press Start 2P', cursive;
+  background-color:darkgray;
+}
+
+nav{
+  font-size: 0.57em;
+  margin-bottom: 5%; 
+}
+
+#log{
+  text-align: center;
+  font-size: 1.2em;
+  
+}
+.op{
+  vertical-align: middle;
+  margin: 1%;
+  font-family: 'Press Start 2P', cursive;
+}
