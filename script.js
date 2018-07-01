@@ -39,12 +39,15 @@ function opcion(humano){
   switch(resultado){
     case 0:
       carita = "sentiment_neutral";
+      navigator.vibrate([50, 250]);
       break;
     case 1:
       carita = "sentiment_very_satisfied";
+      navigator.vibrate([500, 25]);
       break;
     default:
       carita = "sentiment_very_dissatisfied ";
+      navigator.vibrate([250, 500]);
       break;         
          }
   //console.log(carita);
