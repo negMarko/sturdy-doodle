@@ -1,7 +1,6 @@
 {
   "name": "PPLTS",
   "short_name": "PPLTS",
-  "theme_color": "#2196f3",
   "background_color": "#2196f3",
   "display": "standalone",
   "orientation": "portrait",
