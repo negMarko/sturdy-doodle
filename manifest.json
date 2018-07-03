@@ -3,7 +3,7 @@
   "name": "PPTLS",
   "display": "standalone",
   "orientation": "portail",
-  "start_url": "/",
+  "start_url": "index.html",
   "background_color": "#162ceb",
   "theme_color": "#162ceb" 
 }
