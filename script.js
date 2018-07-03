@@ -1,5 +1,8 @@
-function opcion(humano){
+var puntuacion = 0;
 
+function opcion(humano){
+  parar();
+  
   var resultado_texto = ["Empatas", "Ganas", "Pierdes"];
   var nombre = ["Piedra", "Papel", "Tijeras", "Lagarto", "Spock"];
  // console.log(nombre[humano]);
@@ -17,8 +20,13 @@ function opcion(humano){
   
   var resultado = jugada[cpu][humano];
   
-  var mensaje1;
   
+  if(document.getElementsByTagName('button').ev){
+    window.speechSynthesis.cancel();
+  }
+  var mensaje1;
+ 
+
   mensaje1 = new SpeechSynthesisUtterance("HUMANO saca " + nombre[humano]);
   window.speechSynthesis.speak(mensaje1);
   //alert("HUMANO: " + nombre[humano]);
@@ -33,7 +41,7 @@ function opcion(humano){
   
   mensaje3 = new SpeechSynthesisUtterance(resultado_texto[resultado]);
   window.speechSynthesis.speak(mensaje3);
-  
+ 
   var carita;
   
   switch(resultado){
@@ -44,16 +52,21 @@ function opcion(humano){
     case 1:
       carita = "sentiment_very_satisfied";
       navigator.vibrate([500, 25]);
+      puntuacion++;
       break;
     default:
       carita = "sentiment_very_dissatisfied ";
       navigator.vibrate([250, 500]);
+      puntuacion--;
       break;         
          }
   //console.log(carita);
   
-  document.getElementById('log').innerHTML ="HUMANO saca " + nombre[humano] + "</br>" + " CPU saca " + nombre[cpu] + "</br>" + resultado_texto[resultado] + '</br>' + '<i class="material-icons cara">' + carita + "</i>";
+  document.getElementById('log').innerHTML ="HUMANO saca " + nombre[humano] + "</br>" + " CPU saca " + nombre[cpu] + "</br>" + resultado_texto[resultado] + '</br>' + '<i class="material-icons cara" style="font-size:3em;">' + carita + "</i>";
 //  alert(resultado_texto[resultado]);
-  
+  document.getElementById('puntos').innerHTML = "PUNTOS: " + puntuacion;
  //console.log(resultado);
+}
+function parar(){
+  window.speechSynthesis.cancel();
 }

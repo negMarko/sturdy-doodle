@@ -1,0 +1,9 @@
+{
+  "short_name": "PPTLS",
+  "name": "PPTLS",
+  "display": "standalone",
+  "orientation": "portail",
+  "start_url": "index.html",
+  "background_color": "#0488e8",
+  "theme_color": "#162ceb", 
+}
