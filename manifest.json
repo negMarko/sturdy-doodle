@@ -6,5 +6,5 @@
   "display": "standalone",
   "orientation": "portrait",
   "scope": "/",
-  "start_url": "/index.html"
+  "start_url": "https://negmarko.github.io/sturdy-doodle/index.html"
 }
