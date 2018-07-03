@@ -1,9 +1,10 @@
 {
-  "short_name": "PPTLS",
-  "name": "PPTLS",
+  "name": "PPLTS",
+  "short_name": "PPLTS",
+  "theme_color": "#2196f3",
+  "background_color": "#2196f3",
   "display": "standalone",
-  "orientation": "portail",
-  "start_url": "index.html",
-  "background_color": "#162ceb",
-  "theme_color": "#162ceb" 
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/index.html"
 }
