@@ -4,5 +4,22 @@
   "background_color": "#2196f3",
   "display": "standalone",
   "orientation": "portrait",
+  "icons": [
+    {
+      "src": "alligator-48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "alligator-96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "alligator-100.png",
+      "type": "image/png",
+      "sizes": "100x100"
+    }
+  ],
   "start_url": "/sturdy-doodle/index.html"
 }
