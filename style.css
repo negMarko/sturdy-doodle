@@ -1,8 +1,12 @@
-
-@import url('PressStart2P.ttf');
+@font-face
+{
+   font-family: "pressStart2P";
+   src: url("PressStart2P.woff") format("woff"),
+        url("PressStart2P.ttf") format("truetype")
+}
 
 body{
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'pressStart2P', cursive;
   background-color:darkgray;
 }
 
@@ -19,7 +23,7 @@ nav{
 .op{
   vertical-align: middle;
   margin: 1%;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'pressStart2P', cursive;
 }
 #puntos{
   color: azure;
